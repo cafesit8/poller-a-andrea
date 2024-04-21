@@ -1,0 +1,77 @@
+---
+import Navbar from "../components/Navbar.astro"
+import "@fontsource-variable/outfit"
+import WhatsappButton from "../components/WhatsappButton"
+
+interface Props {
+  title: string
+  description: string
+}
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="polleria, pollo, pollos, Andrea, promocion, parrilla, familiar"
+    />
+  </head>
+  <body>
+    <Navbar />
+    <main
+      class="relative text-white font-[Outfit_Variable]  flex flex-col"
+    >
+      <slot />
+      <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,_#141211_40%,_#f2881a_100%)]"></div>
+      <WhatsappButton client:load />
+    </main>
+  </body>
+</html>
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  body {
+    font-family: "Outfit Variable", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+    background: #13151a;
+    background-size: 224px;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+
+  .special_font {
+    font-family: "Oswald Variable", sans-serif;
+    font-weight: 500;
+  }
+</style>
+../components/WhatsappButton.tsx

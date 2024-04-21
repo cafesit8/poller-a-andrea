@@ -1,0 +1,108 @@
+---
+import bg from "../../public/bg.webp"
+import pollo_refrencial from "../../public/pollo_referencial.webp"
+import "@fontsource-variable/oswald"
+import fb from "../../public/facebook.png"
+import insta from "../../public/instagram.png"
+import tiktok from "../../public/tik-tok.png"
+---
+
+<section
+  id="inicio"
+  class="w-full relative min-h-screen flex justify-center items-center px-4 z-10"
+>
+  <img
+    class="w-full h-full absolute top-0 left-0 object-cover"
+    src={bg.src}
+    width={bg.width}
+    height={bg.height}
+    alt="Imagen referencial a la pollería Andrea"
+    style="mask-image: linear-gradient(black 50%, transparent); filter: brightness(30%);"
+  />
+  <div class="z-20 relative flex lg:gap-2 gap-0 max-w-screen-xl lg:flex-row flex-col">
+    <div class="flex flex-col justify-center max-w-[700px]">
+      <p class="special_font lg:text-3xl text-xl">
+        DELIVERY <span class="text-secondary">GRATIS</span> EN TODO <span class="text-secondary">LOS OLIVOS</span>
+      </p>
+      <h1 class="lg:text-7xl text-3xl text-pretty">
+        Pollos a la Brasa y Parrillas
+      </h1>
+      <!-- <h2 class="lg:text-5xl text-2xl text-secondary">1/2 Pollo - S/30</h2> -->
+      <p class="text-white/80 lg:text-lg text-base">
+        <strong class="text-secondary">Descubre nuestras promociones especiales para empresas y eventos</strong>. En Pollos a la Brasa y Parrillas Andrea, ofrecemos un servicio excepcional y una variedad de platos deliciosos para todo tipo de ocasiones ¡Contáctanos para más detalles!
+      </p>
+      <div>
+        <h3 class="special_font lg:text-2xl text-lg">Visíta Nuestras Redes Sociales:</h3>
+        <ul class="flex items-center gap-4 lg:mt-2">
+          <li class="mb-4 text-white/80">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61558010976600&mibextid=nb1MFm3jZYALyyMy"
+              class="hover:underline flex items-center gap-2"
+            >
+              <img
+                class="lg:w-9 w-7"
+                src={fb.src}
+                width={fb.width}
+                height={fb.height}
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="mb-4 text-white/80">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/pollosalabrasayparrillasandrea?igsh=MWdlNnA4bnptZmh4aA== "
+              class="hover:underline flex items-center gap-2"
+            >
+              <img
+                class="lg:w-10 w-8"
+                src={insta.src}
+                width={insta.width}
+                height={insta.height}
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="mb-4 text-white/80">
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@pollosalabrasayparrillas?is_from_webapp=1&sender_device=pc"
+              class="hover:underline flex items-center gap-2"
+            >
+              <img
+                class="lg:w-9 w-7"
+                src={tiktok.src}
+                width={tiktok.width}
+                height={tiktok.height}
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <picture
+      class="flex flex-col relative justify-center lg:w-[1200px] max-w-[700px]"
+    >
+      <img
+        class="w-full h-full object-contain"
+        src={pollo_refrencial.src}
+        width={pollo_refrencial.width}
+        height={pollo_refrencial.height}
+        alt="1/2 de pollo de la pollería Andrea"
+      />
+    </picture>
+  </div>
+</section>
+
+<style scoped>
+  section::after {
+    content: "";
+    background-color: #5ae72f;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+  }
+</style>

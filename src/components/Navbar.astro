@@ -1,0 +1,76 @@
+---
+import logo from "../../public/logo.png"
+---
+
+<header id="header" class="text-white w-full fixed z-50">
+  <nav
+    id="navbar"
+    class="flex justify-between m-auto sm:p-0 sm:py-4 p-4 max-w-screen-xl items-center w-full relative"
+  >
+    <img
+      class="md:w-24 w-14"
+      src={logo.src}
+      width={logo.width}
+      height={logo.height}
+      alt="Logo de la pollería Andrea"
+    />
+    <ul
+      id="list"
+      class="sm:flex sm:flex-row text-lg sm:w-auto sm:relative sm:top-0 sm:bg-transparent sm:gap-5 flex flex-col absolute w-full top-[-500px] left-0 p-4 gap-5 text-center bg-bg-color"
+    >
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#promociones">Promociones</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contactos">Contactos</a></li>
+    </ul>
+    <button class="sm:hidden block z-30" id="btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"
+        ></path></svg
+      >
+    </button>
+  </nav>
+</header>
+
+<script>
+  const $btn = document.getElementById("btn") as HTMLElement
+  const $list = document.getElementById("list") as HTMLElement
+  // const $header = document.getElementById("header") as HTMLElement
+  const $listItems = document.querySelectorAll("#list li a")
+  // const scrollPosition = window.scrollY
+
+  $btn?.addEventListener("click", () => {
+    $list.classList.toggle("top-[-500px]")
+    $list.classList.toggle("top-0")
+  })
+
+  $listItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Cerrar el menú desplegable
+      $list.classList.remove("top-0")
+      $list.classList.add("top-[-500px]")
+    })
+  })
+
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("header") as HTMLElement
+    const scrollPosition = window.scrollY
+
+    if (scrollPosition > 100) {
+      header.classList.add("bg-bg-color")
+    } else {
+      header.classList.remove("bg-bg-color")
+    }
+  })
+</script>

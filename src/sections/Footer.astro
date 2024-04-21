@@ -1,0 +1,143 @@
+---
+import fb from "../../public/facebook.png"
+import insta from "../../public/instagram.png"
+import tiktok from "../../public/tik-tok.png"
+import wsp from "../../public/whatsapp.png"
+import logo from "../../public/logo.png"
+import gmail from "../../public/gmail.png"
+---
+
+<footer
+  class="bg-white [background:linear-gradient(0deg,rgba(20,18,17,1)0%,rgba(187,108,69,0)100%);]"
+>
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="#" class="flex items-center">
+          <img
+            src={logo.src}
+            class="h-8 me-3"
+            alt="Logo de la Pollería Pollos a la Brasa y Parrillas Andrea"
+          />
+          <span
+            class="special_font self-center lg:text-2xl text-lg font-semibold whitespace-nowrap text-white"
+            >Pollos a la Brasa y Parrillas Andrea</span
+          >
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+            Redes Sociales
+          </h2>
+          <ul class="text-gray-500 font-medium text-xs">
+            <li class="mb-4 text-white/80">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61558010976600&mibextid=nb1MFm3jZYALyyMy"
+                class="hover:underline flex items-center gap-2"
+              >
+                <img
+                  class="w-5"
+                  src={fb.src}
+                  width={fb.width}
+                  height={fb.height}
+                  alt=""
+                />
+                Facebook</a
+              >
+            </li>
+            <li class="mb-4 text-white/80">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/pollosalabrasayparrillasandrea?igsh=MWdlNnA4bnptZmh4aA== "
+                class="hover:underline flex items-center gap-2"
+              >
+                <img
+                  class="w-6"
+                  src={insta.src}
+                  width={insta.width}
+                  height={insta.height}
+                  alt=""
+                />
+                Instagram</a
+              >
+            </li>
+            <li class="mb-4 text-white/80">
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@pollosalabrasayparrillas?is_from_webapp=1&sender_device=pc"
+                class="hover:underline flex items-center gap-2"
+              >
+                <img
+                  class="w-5"
+                  src={tiktok.src}
+                  width={tiktok.width}
+                  height={tiktok.height}
+                  alt=""
+                />
+                TikTok</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+            Contacto
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            <li class="mb-4 text-white/80 text-xs">
+              <a
+                target="_blank"
+                aria-label="Link para mandar un correo a la empresa Pollos a la Brasa y Parrillas Andrea"
+                href="mailto:pollosalabrasayparrillasandrea@gmail.com"
+                class="hover:underline flex items-center gap-2"
+              >
+                <img
+                  class="w-5"
+                  src={gmail.src}
+                  width={gmail.width}
+                  height={gmail.height}
+                  alt=""
+                />
+                Correo</a
+              >
+            </li>
+            <li class="mb-4 text-white/80">
+              <a
+                target="_blank"
+                href="https://wa.me/+51979212828?text=¡Hola! Estoy interesado en comprar algo de tu pollería. ¿Podrías ayudarme con más información?"
+                class="hover:underline flex items-center gap-2 text-xs"
+              >
+                <img
+                  class="w-5"
+                  src={wsp.src}
+                  width={wsp.width}
+                  height={wsp.height}
+                  alt=""
+                />
+                Whatsapp Callao</a
+              >
+            </li>
+            <li class="mb-4 text-white/80">
+              <a
+                target="_blank"
+                href="https://wa.me/+51959976229?text=¡Hola! Estoy interesado en comprar algo de tu pollería. ¿Podrías ayudarme con más información?"
+                class="hover:underline flex items-center gap-2 text-xs"
+              >
+                <img
+                  class="w-5"
+                  src={wsp.src}
+                  width={wsp.width}
+                  height={wsp.height}
+                  alt=""
+                />
+                Whatsapp Los Olivos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,138 @@
+---
+import {
+  chickenPromos,
+  parrillasPromos,
+  dishes,
+  combinedParrillas,
+  drinks,
+  fittings,
+  type info,
+} from "../data/promotions"
+import Card from "../components/Card.astro"
+---
+
+<section
+  id="promociones"
+  class="w-full min-[1279px]:w-[1280px] px-4 m-auto lg:pt-28 pt-20"
+>
+  <h2 class="special_font lg:text-4xl text-2xl text-pretty text-center mb-16 px-4">
+    <span class="text-secondary">Promociones</span> Que Tenemos Para Usted
+  </h2>
+  <section class="w-full flex flex-col gap-14">
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        Pollo A La Brasa:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          chickenPromos.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        Parrillas:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          parrillasPromos.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        Combinado De Parrillas:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          combinedParrillas.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        A La Carta:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          dishes.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        Bebidas:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          drinks.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="special_font lg:text-5xl text-3xl text-secondary mb-5">
+        Guardiciones:
+      </h3>
+      <div
+        class="w-full! grid sm:gap-4 sm:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] gap-2"
+      >
+        {
+          fittings.map((info: info) => (
+            <Card
+              title={info.title}
+              img={info.img}
+              items={info.items}
+              price={info.price}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</section>
+

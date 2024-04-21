@@ -1,0 +1,17 @@
+---
+import videoBirthday from "/video.mp4"
+import party from '../../public/party.png'
+---
+
+<section class="w-full md:h-[500px] h-[350px] relative flex justify-center items-center">
+  <video class="absolute w-full pointer-events-none h-full object-cover" style="filter: brightness(25%)" preload="auto" autoplay muted loop src={videoBirthday}></video>
+  <div class="relative z-10 text-center px-4">
+    <span class="special_font text-secondary [font-weight:600] md:text-3xl text-xl">Promoción de Cumpleaños</span>
+    <div class="flex justify-center my-2">
+      <span><img class="w-4" src={party.src} width={party.width} height={party.height} alt="Promoción de Torta Gratis en Pollos a la Brasa y Parrillas Andrea"></span>
+      <span><img class="w-4" src={party.src} width={party.width} height={party.height} alt="Promoción de Torta Gratis en Pollos a la Brasa y Parrillas Andrea"></span>
+    </div>
+    <h3 class="special_font md:text-4xl text-2xl">¡Haciendo de tu <span class="text-primary">Cumpleaños</span> algo aún más especial!</h3>
+    <h3 class="special_font md:text-4xl text-2xl">Disfruta de nuestra torta de cumpleaños como <span class="text-primary">regalo de la casa</span></h3>
+  </div>
+</section>
