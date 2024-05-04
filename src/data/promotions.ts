@@ -38,6 +38,20 @@ import pollo_broaster from '../../public/a_la_carta/pollo_broaster.webp'
 import aeropuerto_carne from '../../public/a_la_carta/aeropuerto_carne.webp'
 import aeropuerto_pollo from '../../public/a_la_carta/aeropuerto_pollo.webp'
 
+// Chifa
+import chaufa_con_carne from '../../public/chifa/chuafa con carne.jpg'
+import chaufa_con_pollo from '../../public/chifa/chaufa con pollo.jpg'
+import aeropuerto_mixto from '../../public/chifa/aeropuerto mixto.jpg'
+import combinado_de_carne from '../../public/chifa/combinado con carne.jpg'
+import combinado_de_pollo from '../../public/chifa/combinado de pollo.png'
+import pollo_chijaukay from '../../public/chifa/pollo_chijaukay.jpg'
+import tortilla from '../../public/chifa/tortilla.jpeg'
+import salvaje from '../../public/chifa/salvaje.jpg'
+import pollo_con_verduras from '../../public/chifa/pollo_con_verduras.jpg'
+import aeropuerto_de_carne from '../../public/chifa/aeropuerto_de_carne.jpg'
+import aeropuerto_de_pollo from '../../public/chifa/aeropuerto_de_pollo.jpg'
+import sopa_wantan from '../../public/chifa/sopa_wantan.jpg'
+
 // Bebidas
 import gordita from '../../public/bebidas/gordita.webp'
 import mediana from '../../public/bebidas/mediana.webp'
@@ -250,6 +264,70 @@ export const dishes: info[] = [
     title: 'Aeropuerto de Pollo',
     items: ['Arroz', 'Papas', 'Ensalada'],
     price: '14'
+  },
+] as const
+
+export const chifas: info[] = [
+  {
+    img: chaufa_con_carne.src,
+    title: 'Chaufa c/ Carne',
+    items: ['Carne', 'Arroz Chaufa', 'Ensalada'],
+    price: '13'
+  },{
+    img: chaufa_con_pollo.src,
+    title: 'Chaufa c/ Pollo',
+    items: ['Pollo', 'Arroz Chaufa', 'Ensalada'],
+    price: '12'
+  },{
+    img: aeropuerto_mixto.src,
+    title: 'Aeropuerto Mixto',
+    items: ['Huevo', 'Arroz Chaufa', 'Ensalada'],
+    price: '15'
+  },{
+    img: combinado_de_carne.src,
+    title: 'Combinado de Carne',
+    items: ['Fideos', 'Arroz Chaufa', 'Carne'],
+    price: '15'
+  },{
+    img: combinado_de_pollo.src,
+    title: 'Combinado de Pollo',
+    items: ['Fideos', 'Arroz Chaufa', 'Pollo'],
+    price: '14'
+  },{
+    img: pollo_chijaukay.src,
+    title: 'Pollo Chijaukay',
+    items: ['Pollo', 'Arroz Chaufa', 'Ensalada'],
+    price: '16'
+  },{
+    img: tortilla.src,
+    title: 'Tortilla c/ Pollo y Verduras',
+    items: ['Pollo', 'Verduras'],
+    price: '15'
+  },{
+    img: salvaje.src,
+    title: 'Salvaje',
+    items: ['Pollo', 'Verduras', 'Cebolla China'],
+    price: '14'
+  },{
+    img: pollo_con_verduras.src,
+    title: 'Pollo c/ Verduras',
+    items: ['Pollo', 'Verduras', 'Arroz Chaufa'],
+    price: '15'
+  },{
+    img: aeropuerto_de_carne.src,
+    title: 'Aeropuerto de Carne',
+    items: ['Carne', 'Verduras', 'Arroz Chaufa'],
+    price: '14'
+  },{
+    img: aeropuerto_de_pollo.src,
+    title: 'Aeropuerto de Pollo',
+    items: ['Pollo', 'Verduras', 'Arroz Chaufa'],
+    price: '13'
+  },{
+    img: sopa_wantan.src,
+    title: 'Sopa Wantan',
+    items: ['Pollo', 'Verduras', 'Fideos'],
+    price: '10'
   },
 ] as const
 
